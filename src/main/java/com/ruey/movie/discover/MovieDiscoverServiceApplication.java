@@ -32,7 +32,7 @@ public class MovieDiscoverServiceApplication {
 	public Docket swaggerConfiguration() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
-				.paths(PathSelectors.ant("/movies-discover/*"))
+				.paths(PathSelectors.ant("/movie-discover/*"))
 				.apis(RequestHandlerSelectors.basePackage("com.ruey"))
 				.build();
 	}

@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import com.ruey.movie.search.model.MovieList;
+import com.ruey.movie.discover.model.MovieList;
 
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-@RequestMapping("/movies-discover")
+@RequestMapping("/movie-discover")
 public class MovieDiscoverService {
 
 	private String POPULAR_PATH = "/discover/movie?sort_by=popularity.desc";
